@@ -45,18 +45,18 @@ public class Escuchador implements View.OnClickListener, AdapterView.OnItemSelec
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
-        mainActivity.findViewById(R.id.btn_calc).setVisibility((position == 0) ? View.GONE: View.VISIBLE);
+        mainActivity.findViewById(R.id.btn_calc).setVisibility((position == 0) ? View.GONE : View.VISIBLE);
         mainActivity.findViewById(R.id.txt_aviso).setVisibility((position == 0) ? View.VISIBLE : View.GONE);
-        if (position != 0){
+        if (position != 0) {
             switch (position) {
                 case 1:
-                    lanzarMensaje(""+adapterView.getItemAtPosition(1));
+                    lanzarMensaje("" + adapterView.getItemAtPosition(1));
                     break;
                 case 2:
-                    lanzarMensaje(""+adapterView.getItemAtPosition(2));
+                    lanzarMensaje("" + adapterView.getItemAtPosition(2));
                     break;
                 case 3:
-                    lanzarMensaje(""+adapterView.getItemAtPosition(3));
+                    lanzarMensaje("" + adapterView.getItemAtPosition(3));
                     break;
                 default:
                     lanzarMensaje("error");
