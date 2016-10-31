@@ -6,6 +6,6 @@ import java.util.Calendar;
 public class MyUtils {
 
     public String modificarVista(String formato, Calendar cal) {
-        return new SimpleDateFormat(formato).format(cal.getTime());
+        return (new SimpleDateFormat(formato).format(cal.getTime()));
     }
 }

@@ -1,15 +1,15 @@
 <resources>
     <string name="app_name">¿Cómo voy a morir?</string>
     <string name="info_personal">Información personal</string>
-    <string name="txt_nombre">Nombre</string>
+    <string name="txt_nombre">Nombre (Requerido)</string>
     <string name="et_nombre">Ej. Manuel</string>
     <string name="txt_apellidos">Apellidos</string>
     <string name="et_apellidos">Ej. Fernández Martín</string>
-    <string name="txt_fecha">Fecha nacimiento</string>
+    <string name="txt_fecha">Fecha nacimiento (Requerido)</string>
     <string name="et_fecha">Ej. 16/12/1995</string>
     <string name="txt_lugar">Lugar de nacimiento</string>
     <string name="et_lugar">Ej. Barcelona</string>
-    <string name="txt_sexo">Sexo</string>
+    <string name="txt_sexo">Sexo (Requerido)</string>
     <string name="sexo_hombre">Hombre</string>
     <string name="sexo_mujer">Mujer</string>
     <string name="sexo_otros">Otros</string>
@@ -20,8 +20,9 @@
     <string name="vicios_tabaco">Tabaco</string>
     <string name="vicios_deporte">Deporte</string>
     <string name="vicios_madrugar">Madrugar</string>
-    <string name="profesion">Profesión</string>
+    <string name="profesion">Profesión (Requerido)</string>
     <string name="boton_calc">Calcular muerte</string>
+    <string name="txt_error">Este campo es obligatorio.</string>
     <string-array name="array_profesiones">
         <item>Selecciona una opción</item>
         <item>Funcionario</item>

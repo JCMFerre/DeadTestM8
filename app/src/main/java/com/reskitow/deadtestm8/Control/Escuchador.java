@@ -1,9 +1,9 @@
 package com.reskitow.deadtestm8.Control;
 
 import android.app.DatePickerDialog;
+import android.graphics.Color;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -19,11 +19,13 @@ public class Escuchador implements View.OnClickListener, AdapterView.OnItemSelec
 
     private MainActivity mainActivity;
     private MyUtils myUtils;
+    private Validacion validacion;
     private Calendar cal;
 
     public Escuchador(final MainActivity mainActivity) {
         this.mainActivity = mainActivity;
         myUtils = new MyUtils();
+        validacion = new Validacion(mainActivity);
         cal = Calendar.getInstance(TimeZone.getDefault());
     }
 
@@ -31,7 +33,11 @@ public class Escuchador implements View.OnClickListener, AdapterView.OnItemSelec
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_calc:
-                lanzarMensaje("Has pulsado el boton calc.");
+                if (validacion.validarRequeridos()) {
+                    lanzarMensaje("Correcto");
+                } else {
+                    lanzarMensaje("incorrecto");
+                }
                 break;
             case R.id.et_fecha:
                 new DatePickerDialog(mainActivity, this, cal.get(cal.YEAR),
