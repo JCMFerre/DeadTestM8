@@ -1,10 +1,11 @@
-package com.reskitow.deadtestm8.Control;
+package com.reskitow.deadtestm8.Utils;
 
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import com.reskitow.deadtestm8.Control.MainActivity;
 import com.reskitow.deadtestm8.R;
 
 public class Validacion {

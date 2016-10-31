@@ -1,16 +1,16 @@
 package com.reskitow.deadtestm8.Control;
 
 import android.app.DatePickerDialog;
-import android.graphics.Color;
+import android.content.Intent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.reskitow.deadtestm8.R;
 import com.reskitow.deadtestm8.Utils.MyUtils;
+import com.reskitow.deadtestm8.Utils.Validacion;
 
 import java.util.Calendar;
 import java.util.TimeZone;
@@ -34,9 +34,11 @@ public class Escuchador implements View.OnClickListener, AdapterView.OnItemSelec
         switch (view.getId()) {
             case R.id.btn_calc:
                 if (validacion.validarRequeridos()) {
-                    lanzarMensaje("Correcto");
+                    Intent i = new Intent(mainActivity, Activity2.class);
+                    //i.putExtra("Prueba", ((EditText) mainActivity.findViewById(R.id.et_nombre)).getText().toString());
+                    mainActivity.startActivity(i);
                 } else {
-                    lanzarMensaje("incorrecto");
+                    lanzarMensaje("Incorrecto");
                 }
                 break;
             case R.id.et_fecha:
