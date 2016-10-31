@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:text="@string/info_personal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_info"
+            android:textSize="24sp"
+            android:paddingBottom="12dp"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_nombre"
+            android:id="@+id/txt_nombre"
+            android:textSize="12sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences|textPersonName"
+            android:hint="@string/et_nombre"
+            android:ems="10"
+            android:id="@+id/et_nombre"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:paddingTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nombre_error"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:paddingTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_apellidos"
+            android:id="@+id/txt_apellidos"
+            android:textSize="12sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences|textPersonName"
+            android:hint="@string/et_apellidos"
+            android:ems="10"
+            android:id="@+id/et_apellidos"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/apellidos_error"
+            android:textSize="12sp"
+            android:paddingTop="4dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:paddingTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_fecha"
+            android:id="@+id/txt_fecha"
+            android:textSize="12sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:hint="@string/et_fecha"
+            android:ems="10"
+            android:id="@+id/et_fecha"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:focusable="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fecha_error"
+            android:textSize="12sp"
+            android:paddingTop="4dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:paddingTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_lugar"
+            android:id="@+id/txt_lugar"
+            android:textSize="12sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences|textPersonName"
+            android:hint="@string/et_lugar"
+            android:ems="10"
+            android:id="@+id/et_lugar"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lugar_error"
+            android:textSize="12sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_sexo"
+            android:id="@+id/txt_sexo"
+            android:textSize="12sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <RadioButton
+                android:text="@string/sexo_hombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rd_hombre"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="@string/sexo_mujer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rd_mujer"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="@string/sexo_otros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rd_otros"
+                android:layout_weight="1" />
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sexo_error"
+            android:textSize="12sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_vicios"
+            android:id="@+id/txt_vicios"
+            android:textSize="12sp" />
+
+        <TableLayout
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="4dp">
+
+                <CheckBox
+                    android:text="@string/vicios_drogas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_drogas"
+                    android:layout_weight="1"/>
+
+                <CheckBox
+                    android:text="@string/vicios_sexo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_sexo"
+                    android:layout_weight="1"/>
+
+                <CheckBox
+                    android:text="@string/vicios_alcohol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_alcohol"
+                    android:layout_weight="1"/>
+            </TableRow>
+            <TableRow
+                android:paddingTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <CheckBox
+                    android:text="@string/vicios_tabaco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_tabaco"
+                    android:layout_weight="1"/>
+
+                <CheckBox
+                    android:text="@string/vicios_deporte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_deporte"
+                    android:layout_weight="1"/>
+
+                <CheckBox
+                    android:text="@string/vicios_madrugar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_madrugar"
+                    android:layout_weight="1"/>
+            </TableRow>
+
+        </TableLayout>
+        <TextView
+            android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profesion"
+            android:id="@+id/txt_profesion"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_profesiones"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:text="@string/txt_aviso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_aviso" />
+
+        <Button
+            android:paddingTop="8dp"
+            android:text="@string/boton_calc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_calc"
+            android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>

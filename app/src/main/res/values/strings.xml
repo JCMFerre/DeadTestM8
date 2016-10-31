@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">¿Cómo voy a morir?</string>
+    <string name="info_personal">Información personal</string>
+    <string name="txt_nombre">Nombre</string>
+    <string name="et_nombre">Ej. Manuel</string>
+    <string name="txt_apellidos">Apellidos</string>
+    <string name="et_apellidos">Ej. Fernández Martín</string>
+    <string name="txt_fecha">Fecha nacimiento</string>
+    <string name="et_fecha">Ej. 16/12/1995</string>
+    <string name="txt_lugar">Lugar de nacimiento</string>
+    <string name="et_lugar">Ej. Barcelona</string>
+    <string name="txt_sexo">Sexo</string>
+    <string name="sexo_hombre">Hombre</string>
+    <string name="sexo_mujer">Mujer</string>
+    <string name="sexo_otros">Otros</string>
+    <string name="txt_vicios">Vicios</string>
+    <string name="vicios_drogas">Drogas</string>
+    <string name="vicios_sexo">Sexo</string>
+    <string name="vicios_alcohol">Alcohol</string>
+    <string name="vicios_tabaco">Tabaco</string>
+    <string name="vicios_deporte">Deporte</string>
+    <string name="vicios_madrugar">Madrugar</string>
+    <string name="profesion">Profesión</string>
+    <string name="boton_calc">Calcular muerte</string>
+    <string-array name="array_profesiones">
+        <item>Selecciona una opción</item>
+        <item>Funcionario</item>
+        <item>Pringao</item>
+        <item>Becario</item>
+    </string-array>
+    <string name="txt_aviso">* Para poder calcular la muerte, tienes que seleccionar una profesión valida.</string>
+
+</resources>
