@@ -35,7 +35,7 @@ public class Escuchador implements View.OnClickListener, AdapterView.OnItemSelec
             case R.id.btn_calc:
                 if (validacion.validarRequeridos()) {
                     Intent i = new Intent(mainActivity, Activity2.class);
-                    //i.putExtra("Prueba", ((EditText) mainActivity.findViewById(R.id.et_nombre)).getText().toString());
+                    i.putExtra("Prueba", ((EditText) mainActivity.findViewById(R.id.et_nombre)).getText().toString());
                     mainActivity.startActivity(i);
                 } else {
                     lanzarMensaje("Incorrecto");
