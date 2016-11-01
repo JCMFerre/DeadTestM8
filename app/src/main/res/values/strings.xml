@@ -32,4 +32,6 @@
         <item>Becario</item>
     </string-array>
     <string name="txt_aviso">* Para poder calcular la muerte, tienes que seleccionar una profesión valida.</string>
+    <string name="completa_requeridos">Completa los campos requeridos.</string>
+    <string name="e33">Error N33</string>
 </resources>

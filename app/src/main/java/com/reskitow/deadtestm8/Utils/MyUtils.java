@@ -1,6 +1,5 @@
 package com.reskitow.deadtestm8.Utils;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
@@ -10,15 +9,21 @@ public class MyUtils {
         return (new SimpleDateFormat(formato).format(cal.getTime()));
     }
 
-    public String[] separarFecha(String fecha) {
-        return fecha.split("/");
+    public int[] separarFechaInt(String fecha) {
+        String[] fechas = fecha.split("/");
+        int[] fechasInt = new int[fechas.length];
+        for (int i = 0; i < fechas.length; i++) {
+            fechasInt[i] = Integer.parseInt(fechas[i]);
+        }
+        return fechasInt;
     }
 
-    public String capitalizarString(String nombre) {
-        return (nombre.substring(0, 1).toUpperCase() + nombre.substring(1).toLowerCase());
+    private String capitalizarString(String nombre) {
+        return (nombre.length() >= 2 ? nombre.substring(0, 1).toUpperCase() + nombre.substring(1).toLowerCase() :
+                nombre.substring(0, 1).toUpperCase());
     }
 
-    public String capitalizarDosString(String nombre) {
+    public String capitalizarCadenasString(String nombre) {
         String[] cadenas = nombre.split("\\s+");
         if (cadenas.length > 1) {
             String cad = "";
@@ -30,10 +35,6 @@ public class MyUtils {
         } else {
             return capitalizarString(nombre);
         }
-    }
-
-    public int separarPorEspacios(String cadena) {
-        return cadena.split("\\s+").length;
     }
 
     public String mostrarVicios(boolean[] vicios) {

@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.reskitow.deadtestm8.R;
@@ -46,17 +45,15 @@ public class Escuchador implements View.OnClickListener, AdapterView.OnItemSelec
                     i.putExtra("profesion", itemProfesion);
                     mainActivity.startActivity(i);
                 } else {
-                    lanzarMensaje("Completa los campos requeridos.");
-                    /*Spinner spinner = mainActivity.getSpinner();
-                    lanzarMensaje("" + spinner.getSelectedItem().toString().toUpperCase().equals("Funcionario"));*/
+                    lanzarMensaje(mainActivity.getString(R.string.completa_requeridos));
                 }
                 break;
             case R.id.et_fecha:
-                new DatePickerDialog(mainActivity, this, cal.get(cal.YEAR),
-                        cal.get(cal.MONTH), cal.get(cal.DAY_OF_MONTH)).show();
+                new DatePickerDialog(mainActivity, this, cal.get(Calendar.YEAR),
+                        cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH)).show();
                 break;
             default:
-                lanzarMensaje("Error");
+                lanzarMensaje(mainActivity.getString(R.string.e33));
                 break;
         }
     }
@@ -72,7 +69,7 @@ public class Escuchador implements View.OnClickListener, AdapterView.OnItemSelec
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
-        lanzarMensaje("La verdad no se cuando entra.");
+        // No entrará, porque para ir a otra activity es necesario cambiar de item.
     }
 
     @Override
