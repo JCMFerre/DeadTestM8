@@ -15,6 +15,10 @@ import com.reskitow.deadtestm8.Utils.Validacion;
 import java.util.Calendar;
 import java.util.TimeZone;
 
+/*
+ * Esta clase controla los eventos y el envio de información a la otra activity.
+ *
+ */
 public class Escuchador implements View.OnClickListener, AdapterView.OnItemSelectedListener, DatePickerDialog.OnDateSetListener {
 
     private MainActivity mainActivity;

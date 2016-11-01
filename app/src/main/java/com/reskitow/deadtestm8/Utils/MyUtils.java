@@ -4,6 +4,10 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Random;
 
+/**
+ * En esta clase utilizaremos metodos para capitalizar una palabra, etc.
+ * Los metodos siempre devuelven en esta clase.
+ */
 public class MyUtils {
 
     public String modificarVista(String formato, Calendar cal) {
@@ -38,40 +42,15 @@ public class MyUtils {
         }
     }
 
-    public String mostrarVicios(boolean[] vicios) {
-        String resultado = "";
-        for (int i = 0; i < vicios.length; i++) {
-            switch (i) {
-                case 0:
-                    resultado += vicios[i] ? "Drogas " : "";
-                    break;
-                case 1:
-                    resultado += vicios[i] ? "Sexo " : "";
-                    break;
-                case 2:
-                    resultado += vicios[i] ? "Mujeres " : "";
-                    break;
-                case 3:
-                    resultado += vicios[i] ? "Tabaco " : "";
-                    break;
-                case 4:
-                    resultado += vicios[i] ? "Deporte " : "";
-                    break;
-                case 5:
-                    resultado += vicios[i] ? "Madrugar " : "";
-                    break;
+    public int calcularFechaMuerte(int anyo, boolean[] vicios) {
+        int anyoMuerte = 0;
+        while (anyoMuerte < anyo) {
+            anyoMuerte = anyo + 27 + (new Random().nextInt(53));
+            for (int i = 0; i < vicios.length; i++) {
+                anyoMuerte -= (vicios[i]) ? 3 : 0;
             }
         }
-        return resultado.isEmpty() ? "No hay vicios seleccionados" : resultado;
-    }
-
-    public int calcularFechaMuerte(int anyo, boolean[] vicios) {
-        /*int anyoMuerte = 0;
-        while (anyoMuerte < Calendar.YEAR && anyoMuerte - anyo > 95) {
-
-        }
-        return anyoMuerte;*/
-        return 2042;
+        return anyoMuerte;
     }
 
     public String calcularDescMuerte(String[] descripciones) {

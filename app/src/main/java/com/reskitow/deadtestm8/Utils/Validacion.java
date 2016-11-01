@@ -9,6 +9,9 @@ import android.widget.TextView;
 import com.reskitow.deadtestm8.Control.MainActivity;
 import com.reskitow.deadtestm8.R;
 
+/**
+ * En esta clase validaremos campos y devolveremos los valores de algunas vistas del mainActivity.
+ */
 public class Validacion {
 
     private MainActivity mainActivity;

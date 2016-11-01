@@ -41,10 +41,16 @@
         <item>Se te olvidará la combinación de la caja fuerte, chutaras la caja fuerte, se te infectará el dedo gordo y morirás.</item>
         <item>Te encontraras un tutorial por internet que, en vez de explicar por voz, lo hacía con un bloc de notas. Decidirás pegarte un tiro antes que soportar eso.</item>
     </string-array>
-    <string name="res_lugar_1">En</string>
+    <string name="res_lugar_1">Lugar de la muerte</string>
     <string name="res_lugar_2h">Buen hombre</string>
     <string name="res_lugar_2m">Buena mujer</string>
     <string name="res_lugar_2o">Buen... Espera, ¿Qué eras?</string>
     <string name="res_lugar3">, mejor</string>
-
+    <string name="vicios_desc_1">Quizá aguantes algo más de tiempo, pero si no tienes ningún vicio… Quizá lleves tiempo muerto.</string>
+    <string name="vicios_desc_2">Tienes pocos vicios, y encima de los perores, ¿a quién le gusta madrugar?</string>
+    <string name="vicios_desc_3">Tienes pocos vicios, así que aprovecha que ya sabes tu muerte.</string>
+    <string name="vicios_desc_4">Algún que otro vicio tienes… Pero qué más da si vas a morir ¿no?</string>
+    <string name="vicios_desc_5">Tientas demasiado a la suerte… ya me lo dirás ;)</string>
+    <string name="vicios_desc_6">Con todos los vicios que tienes, no sé ni cómo sigues vivo…</string>
+    <string name="tumba">Tumba</string>
 </resources>

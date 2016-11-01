@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Test de la mort</string>
+    <string name="act1_name">Com vaig a morir?</string>
+    <string name="act2_name">Així vas a morir</string>
+    <string name="boton_calc">Calcular mort</string>
+    <string name="completa_requeridos">Completa els camps requerits.</string>
+    <string name="e33">Error N33</string>
+    <string name="et_apellidos">Ex. Fernández Martín</string>
+    <string name="et_fecha">Ex. 16/12/1995</string>
+    <string name="et_lugar">Ex. Barcelona</string>
+    <string name="et_nombre">Ex. Manuel</string>
+    <string name="info_personal">Informació personal</string>
+    <string name="res_lugar3">, millor</string>
+    <string name="profesion">Professió (Requerit)</string>
+    <string name="res_lugar_1">Lloc de la mort</string>
+    <string name="res_lugar_2h">Bon home</string>
+    <string name="res_lugar_2m">Bona dona</string>
+    <string name="res_lugar_2o">Bon... Espera, Què ets?</string>
+    <string name="sexo_hombre">Home</string>
+    <string name="sexo_mujer">Dona</string>
+    <string name="sexo_otros">Altres</string>
+    <string name="tumba">Tomba</string>
+    <string name="txt_apellidos">Cognoms</string>
+    <string name="txt_aviso">* Per poder calcular la mort, has de seleccionar una professió vàlida.</string>
+    <string name="txt_error">Aquest camp és obligatori.</string>
+    <string name="txt_fecha">Data naixement (Requerit)</string>
+    <string name="txt_lugar">Lloc de naixement</string>
+    <string name="txt_nombre">Nom (Requerit)</string>
+    <string name="txt_sexo">Sexe (Requerit)</string>
+    <string name="txt_vicios">Vicis</string>
+    <string name="vicios_alcohol">Alcohol</string>
+    <string name="vicios_deporte">Esport</string>
+    <string name="vicios_drogas">Drogues</string>
+    <string name="vicios_madrugar">Matinar</string>
+    <string name="vicios_sexo">Sexe</string>
+    <string name="vicios_tabaco">Tabac</string>
+    <string name="vicios_desc_1">Potser aguantis una mica més de temps, però si no tens cap vici… Potser portis temps mort.</string>
+    <string name="vicios_desc_2">Tens pocs vicis, hi ha sobre dels pitjors, a qui li agrada matinar?</string>
+    <string name="vicios_desc_3">Tens pocs vicis, així que aprofita que ja saps la teva mort.</string>
+    <string name="vicios_desc_4">Algun que un altre vici tens… Però que més dóna si vas a morir no?</string>
+    <string name="vicios_desc_5">Temptes massa a la sort… ja m\'ho diràs ;)</string>
+    <string name="vicios_desc_6">Amb tots els vicis que tens, no sé ni com segueixes viu…</string>
+</resources>
