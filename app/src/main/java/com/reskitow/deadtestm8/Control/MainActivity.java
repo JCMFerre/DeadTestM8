@@ -13,6 +13,8 @@ import com.reskitow.deadtestm8.R;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Spinner spinner;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         Escuchador escuchador = new Escuchador(this);
         Button botonCalcular = (Button) findViewById(R.id.btn_calc);
         botonCalcular.setOnClickListener(escuchador);
-        Spinner spinner = (Spinner) findViewById(R.id.spinner_profesiones);
+        spinner = (Spinner) findViewById(R.id.spinner_profesiones);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.array_profesiones,
                 android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -28,5 +30,9 @@ public class MainActivity extends AppCompatActivity {
         spinner.setOnItemSelectedListener(escuchador);
         EditText etFecha = (EditText) findViewById(R.id.et_fecha);
         etFecha.setOnClickListener(escuchador);
+    }
+
+    public Spinner getSpinner() {
+        return spinner;
     }
 }

@@ -1,6 +1,7 @@
 package com.reskitow.deadtestm8.Utils;
 
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -9,6 +10,7 @@ import com.reskitow.deadtestm8.Control.MainActivity;
 import com.reskitow.deadtestm8.R;
 
 public class Validacion {
+
     private MainActivity mainActivity;
 
     public Validacion(MainActivity mainActivity) {
@@ -44,5 +46,19 @@ public class Validacion {
             txt.setVisibility(View.GONE);
             return true;
         }
+    }
+
+    public boolean[] arrayVicios() {
+        return new boolean[]{((CheckBox) mainActivity.findViewById(R.id.cb_drogas)).isChecked(),
+                ((CheckBox) mainActivity.findViewById(R.id.cb_sexo)).isChecked(),
+                ((CheckBox) mainActivity.findViewById(R.id.cb_alcohol)).isChecked(),
+                ((CheckBox) mainActivity.findViewById(R.id.cb_tabaco)).isChecked(),
+                ((CheckBox) mainActivity.findViewById(R.id.cb_deporte)).isChecked(),
+                ((CheckBox) mainActivity.findViewById(R.id.cb_madrugar)).isChecked()};
+    }
+
+    public int obtenerIntSexo() {
+        return ((RadioButton) mainActivity.findViewById(R.id.rd_hombre)).isChecked() ? 0 :
+                ((RadioButton) mainActivity.findViewById(R.id.rd_mujer)).isChecked() ? 1 : 2;
     }
 }

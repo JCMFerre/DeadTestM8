@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.reskitow.deadtestm8.R;
@@ -21,6 +22,7 @@ public class Escuchador implements View.OnClickListener, AdapterView.OnItemSelec
     private MyUtils myUtils;
     private Validacion validacion;
     private Calendar cal;
+    private int itemProfesion;
 
     public Escuchador(final MainActivity mainActivity) {
         this.mainActivity = mainActivity;
@@ -35,10 +37,18 @@ public class Escuchador implements View.OnClickListener, AdapterView.OnItemSelec
             case R.id.btn_calc:
                 if (validacion.validarRequeridos()) {
                     Intent i = new Intent(mainActivity, Activity2.class);
-                    i.putExtra("Prueba", ((EditText) mainActivity.findViewById(R.id.et_nombre)).getText().toString());
+                    i.putExtra("nombre", ((EditText) mainActivity.findViewById(R.id.et_nombre)).getText().toString());
+                    i.putExtra("apellidos", ((EditText) mainActivity.findViewById(R.id.et_apellidos)).getText().toString());
+                    i.putExtra("fecha", ((EditText) mainActivity.findViewById(R.id.et_fecha)).getText().toString());
+                    i.putExtra("lugar", ((EditText) mainActivity.findViewById(R.id.et_lugar)).getText().toString());
+                    i.putExtra("sexo", validacion.obtenerIntSexo());
+                    i.putExtra("arrayVicios", validacion.arrayVicios());
+                    i.putExtra("profesion", itemProfesion);
                     mainActivity.startActivity(i);
                 } else {
-                    lanzarMensaje("Incorrecto");
+                    lanzarMensaje("Completa los campos requeridos.");
+                    /*Spinner spinner = mainActivity.getSpinner();
+                    lanzarMensaje("" + spinner.getSelectedItem().toString().toUpperCase().equals("Funcionario"));*/
                 }
                 break;
             case R.id.et_fecha:
@@ -56,20 +66,7 @@ public class Escuchador implements View.OnClickListener, AdapterView.OnItemSelec
         mainActivity.findViewById(R.id.btn_calc).setVisibility((position == 0) ? View.GONE : View.VISIBLE);
         mainActivity.findViewById(R.id.txt_aviso).setVisibility((position == 0) ? View.VISIBLE : View.GONE);
         if (position != 0) {
-            switch (position) {
-                case 1:
-                    lanzarMensaje("" + adapterView.getItemAtPosition(1));
-                    break;
-                case 2:
-                    lanzarMensaje("" + adapterView.getItemAtPosition(2));
-                    break;
-                case 3:
-                    lanzarMensaje("" + adapterView.getItemAtPosition(3));
-                    break;
-                default:
-                    lanzarMensaje("error");
-                    break;
-            }
+            itemProfesion = position;
         }
     }
 
