@@ -27,11 +27,24 @@
     <string name="txt_error">Este campo es obligatorio.</string>
     <string-array name="array_profesiones">
         <item>Selecciona una opción</item>
-        <item>Funcionario</item>
-        <item>Pringao</item>
-        <item>Becario</item>
+        <item>Funcionario/a</item>
+        <item>Pringao/a</item>
+        <item>Becario/a</item>
     </string-array>
     <string name="txt_aviso">* Para poder calcular la muerte, tienes que seleccionar una profesión valida.</string>
     <string name="completa_requeridos">Completa los campos requeridos.</string>
     <string name="e33">Error N33</string>
+    <string-array name="array_descripciones">
+        <item>Subirás al coche, se te enredara la bufanda en la rueda y morirás estrangulado/a. Es una pena, pero nadie se acordará de ti.</item>
+        <item>Un día iras tan borracho/a que intentarás abrazar el reflejo del agua, te caerás y te ahogaras. Lo peor de todo es que ningún amigo/a tuyo/a te recogerá para no soltar su cerveza.</item>
+        <item>Te dejaras barba, al tenerla tan larga (La barba…). Un día se te olvidara enrollártela, te tropezaras con ella y te partirás el cuello.</item>
+        <item>Se te olvidará la combinación de la caja fuerte, chutaras la caja fuerte, se te infectará el dedo gordo y morirás.</item>
+        <item>Te encontraras un tutorial por internet que, en vez de explicar por voz, lo hacía con un bloc de notas. Decidirás pegarte un tiro antes que soportar eso.</item>
+    </string-array>
+    <string name="res_lugar_1">En</string>
+    <string name="res_lugar_2h">Buen hombre</string>
+    <string name="res_lugar_2m">Buena mujer</string>
+    <string name="res_lugar_2o">Buen... Espera, ¿Qué eras?</string>
+    <string name="res_lugar3">, mejor</string>
+
 </resources>

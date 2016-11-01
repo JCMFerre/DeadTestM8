@@ -2,6 +2,7 @@ package com.reskitow.deadtestm8.Utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Random;
 
 public class MyUtils {
 
@@ -62,6 +63,19 @@ public class MyUtils {
             }
         }
         return resultado.isEmpty() ? "No hay vicios seleccionados" : resultado;
+    }
+
+    public int calcularFechaMuerte(int anyo, boolean[] vicios) {
+        /*int anyoMuerte = 0;
+        while (anyoMuerte < Calendar.YEAR && anyoMuerte - anyo > 95) {
+
+        }
+        return anyoMuerte;*/
+        return 2042;
+    }
+
+    public String calcularDescMuerte(String[] descripciones) {
+        return descripciones[new Random().nextInt(descripciones.length)];
     }
 
 }
