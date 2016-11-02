@@ -3,7 +3,6 @@ package com.reskitow.deadtestm8.Control;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.reskitow.deadtestm8.R;
 import com.reskitow.deadtestm8.Utils.MyUtils;

@@ -11,7 +11,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // No me deja traducir los arrays!!
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // Creamos el escuchador para asignaserlo posteriormente a las vistas que queremos.
