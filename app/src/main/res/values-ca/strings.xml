@@ -41,4 +41,17 @@
     <string name="vicios_desc_4">Algun que un altre vici tens… Però que més dóna si vas a morir no?</string>
     <string name="vicios_desc_5">Temptes massa a la sort… ja m\'ho diràs ;)</string>
     <string name="vicios_desc_6">Amb tots els vicis que tens, no sé ni com segueixes viu…</string>
+    <string-array name="array_descripciones">
+        <item>Pujaràs al cotxe, se t\'enrotllarà la bufanda en la roda i moriràs escanyat/a. És una pena, però ningú s\'acordarà de tu.</item>
+        <item>Un dia aniràs tan borratxo/a, fet que intentaràs abraçar el reflex de l\'aigua, cauràs i t\'ofegaràs. El pitjor de tot és que cap amic/a teu/a et recollirà per no deixar anar la seva cervesa.</item>
+        <item>Et deixaràs barba, al tenir-la tan llarga (La barba...). Un dia se t\'oblidarà enrotllar-te-la, t\'ensopegaràs amb ella i et partiràs el coll.</item>
+        <item>Se t\'oblidarà la combinació de la caixa forta, xutaràs la caixa forta, se t\'infectarà el dit gros i moriràs.</item>
+        <item>Et trobaràs un tutorial per internet que, en comptes d\'explicar per veu, ho feia amb un bloc de notes. Decidiràs pegar-te un tir abans que suportar això.</item>
+    </string-array>
+    <string-array name="array_profesiones">
+        <item>Selecciona una opció</item>
+        <item>Funcionari/a</item>
+        <item>Pringat/da</item>
+        <item>Becari/a</item>
+    </string-array>
 </resources>

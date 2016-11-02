@@ -9,8 +9,6 @@ import com.reskitow.deadtestm8.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    // Para controlar las pantallas utilizaria onSaveInstanceState, pero no se borran los datos en los editText.
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // No me deja traducir los arrays!!
